@@ -1,0 +1,4 @@
+2019-12-09 15:16:27.784089: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+Using TensorFlow backend.
+C:\Users\VK\Desktop\thesis\Parse_Modules\parse_method_synthesizer\target\classes\MethodSynthesizer_venv\lib\site-packages\tensorflow_core\python\framework\indexed_slices.py:424: UserWarning: Converting sparse IndexedSlices to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  "Converting sparse IndexedSlices to a dense Tensor of unknown shape. "

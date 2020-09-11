@@ -1,0 +1,1980 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/team3/robo-ontology-0#"
+     xml:base="http://www.semanticweb.org/team3/robo-ontology-0"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/team3/robo-ontology-0"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#near -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#near"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/team3/robo-ontology-0#OWLObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/team3/robo-ontology-0#OWLObjectProperty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Object"/>
+        <rdfs:label xml:lang="en">valueNear</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/team3/robo-ontology-0#hasMethod -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/team3/robo-ontology-0#hasMethod">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Robo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Method"/>
+        <rdfs:label xml:lang="en">hasMethod</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/team3/robo-ontology-0#hasParameter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/team3/robo-ontology-0#hasParameter">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Method"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <rdfs:label xml:lang="en">hasParameter</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/team3/robo-ontology-0#hasValue -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/team3/robo-ontology-0#hasValue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#DataType"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Value"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasValue</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/team3/robo-ontology-0#ofDataType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/team3/robo-ontology-0#ofDataType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#DataType"/>
+        <rdfs:label xml:lang="en">ofDataType</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/team3/robo-ontology-0#closeDistance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/team3/robo-ontology-0#closeDistance">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Object"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:label xml:lang="en">closeDistance</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/team3/robo-ontology-0#farDistance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/team3/robo-ontology-0#farDistance">
+        <rdfs:label xml:lang="en">farDistance</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/team3/robo-ontology-0#midDistance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/team3/robo-ontology-0#midDistance">
+        <rdfs:label xml:lang="en">midDistance</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/team3/robo-ontology-0#DataType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/team3/robo-ontology-0#DataType">
+        <rdfs:label xml:lang="en">DataType</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/team3/robo-ontology-0#Method -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/team3/robo-ontology-0#Method">
+        <rdfs:label xml:lang="en">Method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/team3/robo-ontology-0#Object -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/team3/robo-ontology-0#Object"/>
+    
+
+
+    <!-- http://www.semanticweb.org/team3/robo-ontology-0#Parameter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/team3/robo-ontology-0#Parameter">
+        <rdfs:label xml:lang="en">Parameter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/team3/robo-ontology-0#Robo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/team3/robo-ontology-0#Robo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/team3/robo-ontology-0#State -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/team3/robo-ontology-0#State"/>
+    
+
+
+    <!-- http://www.semanticweb.org/team3/robo-ontology-0#Value -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/team3/robo-ontology-0#Value">
+        <rdfs:label xml:lang="en">Value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#Color -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#Color">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#DataType"/>
+        <hasValue rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#black"/>
+        <hasValue rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#blue"/>
+        <hasValue rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#brown"/>
+        <hasValue rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#green"/>
+        <hasValue rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#red"/>
+        <hasValue rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#white"/>
+        <hasValue rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#yellow"/>
+        <rdfs:comment xml:lang="synonym">Color: colouration,colour,vividness,semblance,color,gloss,coloration,coloring,colouring_material,colouring,coloring_material</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#ConditionCloseToObject -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#ConditionCloseToObject">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Method"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#object"/>
+        <rdfs:comment xml:lang="synonym">Close: airless,secretive,cheeseparing,unaired,tightlipped,confining,closelipped,tight,penny-pinching,nigh,faithful,close-fitting,stuffy,snug,skinny,near,close,closemouthed</rdfs:comment>
+        <rdfs:comment xml:lang="callstatement">IsCloseToObjectCondition</rdfs:comment>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.conditions.IsCloseToObjectCondition</rdfs:comment>
+        <rdfs:label xml:lang="en">ConditionCloseToObject</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#ConditionLineDetected -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#ConditionLineDetected">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Method"/>
+        <rdfs:comment xml:lang="synonym">Detected:</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">Line: lineage,argument,occupation,channel,personal_credit_line,production_line,line_of_credit,logical_argument,credit_line,business_line,stock,cable,blood_line,line_of_work,strain,demarcation,telephone_circuit,assembly_line,line_of_merchandise,product_line,melody,line_of_business,personal_line_of_credit,contrast,crease,line_of_descent,job,communication_channel,note,furrow,ancestry,billet,line_of_reasoning,line,railway_line,origin,seam,air,bloodline,tune,stemma,dividing_line,transmission_line,course,short_letter,crinkle,phone_line,bank_line,argumentation,business,wrinkle,telephone_line,blood,agate_line,pipeline,pedigree,descent,line_of_products,subscriber_line,rail_line,parentage,melodic_line,melodic_phrase</rdfs:comment>
+        <rdfs:comment xml:lang="callstatement">LineDetectedCondition</rdfs:comment>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.conditions.LineDetectedCondition</rdfs:comment>
+        <rdfs:label xml:lang="en">ConditionLineDetected</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#ConditionNearObject -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#ConditionNearObject">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Method"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#object"/>
+        <rdfs:comment xml:lang="callstatement">IsNearObjectCondition</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">Near: cheeseparing,approximate,skinny,near,dear,close,penny-pinching,good,nigh</rdfs:comment>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.conditions.IsNearObjectCondition</rdfs:comment>
+        <rdfs:label xml:lang="en">ConditionNearObject</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#ConditionSeesColor -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#ConditionSeesColor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Method"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#color"/>
+        <rdfs:comment xml:lang="synonym">Color: colouration,colour,vividness,semblance,color,gloss,coloration,coloring,colouring_material,colouring,coloring_material</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">Sees:</rdfs:comment>
+        <rdfs:comment xml:lang="callstatement">SeesColorCondition</rdfs:comment>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.conditions.SeesColorCondition</rdfs:comment>
+        <rdfs:label xml:lang="en">ConditionSeesColor</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#ConditionSeesObject -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#ConditionSeesObject">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Method"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#object"/>
+        <rdfs:comment xml:lang="synonym">Sees:</rdfs:comment>
+        <rdfs:comment xml:lang="callstatement">SeesObjectCondition</rdfs:comment>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.conditions.SeesObjectCondition</rdfs:comment>
+        <rdfs:label xml:lang="en">ConditionSeesObject</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#ConditionSeesRemote -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#ConditionSeesRemote">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Method"/>
+        <rdfs:comment xml:lang="synonym">Remote: removed,outside,distant,remote,outback</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">Sees:</rdfs:comment>
+        <rdfs:comment xml:lang="callstatement">SeesRemoteCondition</rdfs:comment>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.conditions.SeesRemoteCondition</rdfs:comment>
+        <rdfs:label xml:lang="en">ConditionSeesRemote</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#Direction -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#Direction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#DataType"/>
+        <hasValue rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#backward"/>
+        <hasValue rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#down"/>
+        <hasValue rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#forward"/>
+        <hasValue rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#left"/>
+        <hasValue rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#right"/>
+        <hasValue rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#up"/>
+        <rdfs:comment xml:lang="synonym">Direction: counsel,charge,counseling,focussing,steering,focus,focusing,focal_point,way,counselling,guidance,management,instruction,commission,centering,direction</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#ICondition -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#ICondition">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#DataType"/>
+        <rdfs:comment xml:lang="synonym">Condition: condition,shape,strings,circumstance,experimental_condition,consideration,term,precondition,stipulation,status</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#Revolution -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#Revolution">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#DataType"/>
+        <hasValue rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#full"/>
+        <hasValue rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#half"/>
+        <hasValue rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#quarter"/>
+        <rdfs:comment xml:lang="synonym">Revolution: gyration,rotation,revolution</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#SceneryObject -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#SceneryObject">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#DataType"/>
+        <rdfs:comment xml:lang="synonym">Scenery: scenery,scene</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#Speed -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#Speed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#DataType"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Value"/>
+        <hasValue rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#fast"/>
+        <hasValue rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#fastest"/>
+        <hasValue rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#medium"/>
+        <hasValue rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#slow"/>
+        <hasValue rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#slowest"/>
+        <rdfs:comment xml:lang="synonym">Speed: focal_ratio,f_number,speeding,fastness,swiftness,upper,amphetamine,stop_number,pep_pill,velocity,hurrying,speed</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#backward -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#backward">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Value"/>
+        <rdfs:comment xml:lang="callstatement">BACKWARD</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">backward: half-witted,feebleminded,backward,slow-witted</rdfs:comment>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.enums.Direction</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#belch -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#belch">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Method"/>
+        <rdfs:comment xml:lang="callstatement">belch</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">belch: bubble,erupt,belch,eruct,extravasate,burp</rdfs:comment>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.IRobo</rdfs:comment>
+        <rdfs:label xml:lang="en">belch</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#black -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#black">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Value"/>
+        <rdfs:comment xml:lang="callstatement">BLACK</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">black: black-market,ignominious,smuggled,fateful,contraband,bootleg,calamitous,pitch-dark,black,disgraceful,opprobrious,dim,smutty,fatal,bleak,inglorious,disastrous,mordant,blackened,sinister,dark,shameful,pitch-black,grim</rdfs:comment>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.enums.Color</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#blink -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#blink">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Method"/>
+        <rdfs:comment xml:lang="callstatement">blink</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">blink: twinkle,winkle,nictate,blink_away,nictitate,wink,blink,flash</rdfs:comment>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.IRobo</rdfs:comment>
+        <rdfs:label xml:lang="en">blink</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#blue -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#blue">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Value"/>
+        <rdfs:comment xml:lang="callstatement">BLUE</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">blue: drab,blue-blooded,dingy,down,bluish,racy,profane,dispirited,down_in_the_mouth,low,sorry,aristocratic,gloomy,depressed,dark,gentle,naughty,gamey,aristocratical,blasphemous,puritanical,puritanic,risque,low-spirited,dismal,blueish,spicy,dreary,downhearted,blue,disconsolate,gamy,downcast,juicy,patrician,drear,grim</rdfs:comment>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.enums.Color</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#brown -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#brown">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Value"/>
+        <rdfs:comment xml:lang="callstatement">BROWN</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">brown: chocolate-brown,browned,brown,brownish,dark-brown</rdfs:comment>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.enums.Color</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#clap -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#clap">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Method"/>
+        <rdfs:comment xml:lang="callstatement">clap</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">clap: spat,clap,acclaim,applaud</rdfs:comment>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.IRobo</rdfs:comment>
+        <rdfs:label xml:lang="en">clap</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#color -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#color">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#Color"/>
+        <rdfs:comment xml:lang="pos">0</rdfs:comment>
+        <rdfs:label xml:lang="en">color</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#condition -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#condition">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#ICondition"/>
+        <rdfs:comment xml:lang="pos">1</rdfs:comment>
+        <rdfs:label xml:lang="en">condition</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#condition -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#condition">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#ICondition"/>
+        <rdfs:comment xml:lang="pos">0</rdfs:comment>
+        <rdfs:label xml:lang="en">condition</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#condition -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#condition">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#ICondition"/>
+        <rdfs:comment xml:lang="pos">1</rdfs:comment>
+        <rdfs:label xml:lang="en">condition</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#condition -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#condition">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#ICondition"/>
+        <rdfs:comment xml:lang="pos">0</rdfs:comment>
+        <rdfs:label xml:lang="en">condition</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#condition -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#condition">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#ICondition"/>
+        <rdfs:comment xml:lang="pos">1</rdfs:comment>
+        <rdfs:label xml:lang="en">condition</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#condition -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#condition">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#ICondition"/>
+        <rdfs:comment xml:lang="pos">2</rdfs:comment>
+        <rdfs:label xml:lang="en">condition</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#condition -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#condition">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#ICondition"/>
+        <rdfs:comment xml:lang="pos">1</rdfs:comment>
+        <rdfs:label xml:lang="en">condition</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#condition -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#condition">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#ICondition"/>
+        <rdfs:comment xml:lang="pos">0</rdfs:comment>
+        <rdfs:label xml:lang="en">condition</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#degrees -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#degrees">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#int"/>
+        <rdfs:comment xml:lang="pos">1</rdfs:comment>
+        <rdfs:label xml:lang="en">degrees</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#degrees -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#degrees">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#int"/>
+        <rdfs:comment xml:lang="pos">0</rdfs:comment>
+        <rdfs:label xml:lang="en">degrees</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#degrees -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#degrees">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#int"/>
+        <rdfs:comment xml:lang="pos">1</rdfs:comment>
+        <rdfs:label xml:lang="en">degrees</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#degrees -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#degrees">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#int"/>
+        <rdfs:comment xml:lang="pos">0</rdfs:comment>
+        <rdfs:label xml:lang="en">degrees</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#dir -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#dir">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#Direction"/>
+        <rdfs:comment xml:lang="pos">0</rdfs:comment>
+        <rdfs:label xml:lang="en">dir</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#dir -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#dir">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#Direction"/>
+        <rdfs:comment xml:lang="pos">0</rdfs:comment>
+        <rdfs:label xml:lang="en">dir</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#dir -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#dir">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#Direction"/>
+        <rdfs:comment xml:lang="pos">0</rdfs:comment>
+        <rdfs:label xml:lang="en">dir</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#dir -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#dir">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#Direction"/>
+        <rdfs:comment xml:lang="pos">0</rdfs:comment>
+        <rdfs:label xml:lang="en">dir</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#dir -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#dir">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#Direction"/>
+        <rdfs:comment xml:lang="pos">0</rdfs:comment>
+        <rdfs:label xml:lang="en">dir</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#dir -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#dir">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#Direction"/>
+        <rdfs:comment xml:lang="pos">0</rdfs:comment>
+        <rdfs:label xml:lang="en">dir</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#dir -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#dir">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#Direction"/>
+        <rdfs:comment xml:lang="pos">0</rdfs:comment>
+        <rdfs:label xml:lang="en">dir</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#dir -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#dir">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#Direction"/>
+        <rdfs:comment xml:lang="pos">0</rdfs:comment>
+        <rdfs:label xml:lang="en">dir</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#dir -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#dir">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#Direction"/>
+        <rdfs:comment xml:lang="pos">0</rdfs:comment>
+        <rdfs:label xml:lang="en">dir</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#dir -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#dir">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#Direction"/>
+        <rdfs:comment xml:lang="pos">0</rdfs:comment>
+        <rdfs:label xml:lang="en">dir</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#dir -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#dir">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#Direction"/>
+        <rdfs:comment xml:lang="pos">0</rdfs:comment>
+        <rdfs:label xml:lang="en">dir</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#dir -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#dir">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#Direction"/>
+        <rdfs:comment xml:lang="pos">0</rdfs:comment>
+        <rdfs:label xml:lang="en">dir</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#dir -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#dir">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#Direction"/>
+        <rdfs:comment xml:lang="pos">0</rdfs:comment>
+        <rdfs:label xml:lang="en">dir</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#dir -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#dir">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#Direction"/>
+        <rdfs:comment xml:lang="pos">0</rdfs:comment>
+        <rdfs:label xml:lang="en">dir</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#dir -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#dir">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#Direction"/>
+        <rdfs:comment xml:lang="pos">0</rdfs:comment>
+        <rdfs:label xml:lang="en">dir</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#direction -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#direction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#Direction"/>
+        <rdfs:comment xml:lang="pos">0</rdfs:comment>
+        <rdfs:label xml:lang="en">direction</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#direction -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#direction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#Direction"/>
+        <rdfs:comment xml:lang="pos">0</rdfs:comment>
+        <rdfs:label xml:lang="en">direction</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#down -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#down">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Value"/>
+        <rdfs:comment xml:lang="callstatement">DOWN</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">down: downward,low-spirited,down,mastered,downhearted,down_pat,dispirited,blue,down_in_the_mouth,low,downcast,depressed,gloomy,grim</rdfs:comment>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.enums.Direction</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#fast -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#fast">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Value"/>
+        <rdfs:comment xml:lang="callstatement">FAST</rdfs:comment>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.enums.Speed</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">fast: quick,debauched,dissipated,loyal,dissolute,immobile,degraded,libertine,degenerate,firm,fast,riotous,flying,truehearted,profligate</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#fastest -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#fastest">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Value"/>
+        <rdfs:comment xml:lang="callstatement">FASTEST</rdfs:comment>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.enums.Speed</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">fastest:</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#followLineUntil -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#followLineUntil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Method"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#condition"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#speed"/>
+        <rdfs:comment xml:lang="synonym">Line: lineage,argument,occupation,channel,personal_credit_line,production_line,line_of_credit,logical_argument,credit_line,business_line,stock,cable,blood_line,line_of_work,strain,demarcation,telephone_circuit,assembly_line,line_of_merchandise,product_line,melody,line_of_business,personal_line_of_credit,contrast,crease,line_of_descent,job,communication_channel,note,furrow,ancestry,billet,line_of_reasoning,line,railway_line,origin,seam,air,bloodline,tune,stemma,dividing_line,transmission_line,course,short_letter,crinkle,phone_line,bank_line,argumentation,business,wrinkle,telephone_line,blood,agate_line,pipeline,pedigree,descent,line_of_products,subscriber_line,rail_line,parentage,melodic_line,melodic_phrase</rdfs:comment>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.IRobo</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">follow: keep_up,be,stick_to,come_after,espouse,watch_over,observe,trace,pursue,fall_out,keep_abreast,play_along,keep_an_eye_on,comply,conform_to,postdate,come,travel_along,follow,take_after,accompany,surveil,watch,adopt,succeed,stick_with,survey,abide_by</rdfs:comment>
+        <rdfs:comment xml:lang="callstatement">followLineUntil</rdfs:comment>
+        <rdfs:label xml:lang="en">followLineUntil</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#followLineUntil -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#followLineUntil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Method"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#condition"/>
+        <rdfs:comment xml:lang="synonym">Line: lineage,argument,occupation,channel,personal_credit_line,production_line,line_of_credit,logical_argument,credit_line,business_line,stock,cable,blood_line,line_of_work,strain,demarcation,telephone_circuit,assembly_line,line_of_merchandise,product_line,melody,line_of_business,personal_line_of_credit,contrast,crease,line_of_descent,job,communication_channel,note,furrow,ancestry,billet,line_of_reasoning,line,railway_line,origin,seam,air,bloodline,tune,stemma,dividing_line,transmission_line,course,short_letter,crinkle,phone_line,bank_line,argumentation,business,wrinkle,telephone_line,blood,agate_line,pipeline,pedigree,descent,line_of_products,subscriber_line,rail_line,parentage,melodic_line,melodic_phrase</rdfs:comment>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.IRobo</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">follow: keep_up,be,stick_to,come_after,espouse,watch_over,observe,trace,pursue,fall_out,keep_abreast,play_along,keep_an_eye_on,comply,conform_to,postdate,come,travel_along,follow,take_after,accompany,surveil,watch,adopt,succeed,stick_with,survey,abide_by</rdfs:comment>
+        <rdfs:comment xml:lang="callstatement">followLineUntil</rdfs:comment>
+        <rdfs:label xml:lang="en">followLineUntil</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#forward -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#forward">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Value"/>
+        <rdfs:comment xml:lang="callstatement">FORWARD</rdfs:comment>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.enums.Direction</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">forward: forward-moving,forward,advancing</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#full -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#full">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Value"/>
+        <rdfs:comment xml:lang="callstatement">FULL</rdfs:comment>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.enums.Revolution</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">full: total,wide,broad,replete,entire,wide-cut,good,full</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#grab -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#grab">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Method"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#object"/>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.IRobo</rdfs:comment>
+        <rdfs:comment xml:lang="callstatement">grab</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">grab: take_hold_of,seize,snaffle,catch,grab,snap_up</rdfs:comment>
+        <rdfs:label xml:lang="en">grab</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#green -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#green">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Value"/>
+        <rdfs:comment xml:lang="callstatement">GREEN</rdfs:comment>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.enums.Color</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">green: greenish,gullible,green,dark-green,light-green,fleeceable,immature,unripened,unripe</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#half -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#half">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Value"/>
+        <rdfs:comment xml:lang="callstatement">HALF</rdfs:comment>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.enums.Revolution</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">half: half</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#int -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#int">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#DataType"/>
+        <rdfs:comment xml:lang="synonym">int:</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#left -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#left">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Value"/>
+        <rdfs:comment xml:lang="callstatement">LEFT</rdfs:comment>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.enums.Direction</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">left: leftover,left,unexpended,left-hand,left_over,odd,remaining</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#length -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#length">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#int"/>
+        <rdfs:comment xml:lang="pos">1</rdfs:comment>
+        <rdfs:label xml:lang="en">length</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#length -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#length">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#int"/>
+        <rdfs:comment xml:lang="pos">1</rdfs:comment>
+        <rdfs:label xml:lang="en">length</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#liftHead -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#liftHead">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Method"/>
+        <rdfs:comment xml:lang="synonym">Head: top_dog,headland,straits,fountainhead,point,head,principal,caput,read/write_head,drumhead,headspring,mind,psyche,question,capitulum,pass,heading,chief,headway,brain,nous,school_principal,promontory,foreland,forefront,head_teacher,oral_sex,header,head_word</rdfs:comment>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.IRobo</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">lift: cabbage,nobble,revoke,overturn,bring_up,go_up,hoist,rear,snarf,hook,come_up,move_up,raise,vacate,sneak,elevate,face-lift,repeal,rescind,filch,pinch,uprise,arise,abstract,get_up,reverse,plagiarise,purloin,countermand,plagiarize,annul,rustle,swipe,airlift,lift,pilfer,rise,wind</rdfs:comment>
+        <rdfs:comment xml:lang="callstatement">liftHead</rdfs:comment>
+        <rdfs:label xml:lang="en">liftHead</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#long -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#long">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#DataType"/>
+        <rdfs:comment xml:lang="synonym">long:</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#look -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#look">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Method"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#direction"/>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.IRobo</rdfs:comment>
+        <rdfs:comment xml:lang="callstatement">look</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">look: wait,attend,depend,count,look,seem,bet,appear,expect,search,face,see,bank,rely,take_care,await,front,calculate,reckon,swear</rdfs:comment>
+        <rdfs:label xml:lang="en">look</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#lowerHead -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#lowerHead">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Method"/>
+        <rdfs:comment xml:lang="synonym">Head: top_dog,headland,straits,fountainhead,point,head,principal,caput,read/write_head,drumhead,headspring,mind,psyche,question,capitulum,pass,heading,chief,headway,brain,nous,school_principal,promontory,foreland,forefront,head_teacher,oral_sex,header,head_word</rdfs:comment>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.IRobo</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">lower: get_down,lour,bring_down,glower,turn_down,let_down,lower,take_down,frown,depress</rdfs:comment>
+        <rdfs:comment xml:lang="callstatement">lowerHead</rdfs:comment>
+        <rdfs:label xml:lang="en">lowerHead</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#makeTowardsObject -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#makeTowardsObject">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Method"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#object"/>
+        <rdfs:comment xml:lang="synonym">Towards:</rdfs:comment>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.IRobo</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">make: stool,prepare,reach,do,construct,get_to,pretend,arrive_at,hold,nominate,score,pee,hit,pass_water,fix,create,attain,relieve_oneself,realize,give,work,constitute,make_up,piss,stimulate,establish,make_believe,take_in,take,induce,ca-ca,name,progress_to,spend_a_penny,puddle,lay_down,cause,gain,bring_in,ready,wee,get,have,defecate,pull_in,take_a_shit,make,wee-wee,cook,piddle,clear,draw,pee-pee,urinate,produce,crap,take_a_leak,take_a_crap,realise,form,build,throw,shit,earn,micturate,make_water,seduce</rdfs:comment>
+        <rdfs:comment xml:lang="callstatement">makeTowardsObject</rdfs:comment>
+        <rdfs:label xml:lang="en">makeTowardsObject</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#medium -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#medium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Value"/>
+        <rdfs:comment xml:lang="callstatement">MEDIUM</rdfs:comment>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.enums.Speed</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">medium: average,intermediate,medium</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#moveHead -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#moveHead">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Method"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#direction"/>
+        <rdfs:comment xml:lang="synonym">Head: top_dog,headland,straits,fountainhead,point,head,principal,caput,read/write_head,drumhead,headspring,mind,psyche,question,capitulum,pass,heading,chief,headway,brain,nous,school_principal,promontory,foreland,forefront,head_teacher,oral_sex,header,head_word</rdfs:comment>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.IRobo</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">move: move,proceed,displace,affect,make_a_motion,strike,go,be_active,actuate,run,impress,locomote,act,propel,incite,motivate,travel,prompt</rdfs:comment>
+        <rdfs:comment xml:lang="callstatement">moveHead</rdfs:comment>
+        <rdfs:label xml:lang="en">moveHead</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#moveUntil -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#moveUntil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Method"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#condition"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#dir"/>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.IRobo</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">move: move,proceed,displace,affect,make_a_motion,strike,go,be_active,actuate,run,impress,locomote,act,propel,incite,motivate,travel,prompt</rdfs:comment>
+        <rdfs:comment xml:lang="callstatement">moveUntil</rdfs:comment>
+        <rdfs:label xml:lang="en">moveUntil</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#moveUntil -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#moveUntil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Method"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#condition"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#dir"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#speed"/>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.IRobo</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">move: move,proceed,displace,affect,make_a_motion,strike,go,be_active,actuate,run,impress,locomote,act,propel,incite,motivate,travel,prompt</rdfs:comment>
+        <rdfs:comment xml:lang="callstatement">moveUntil</rdfs:comment>
+        <rdfs:label xml:lang="en">moveUntil</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#move -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#move">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Method"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#dir"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#time"/>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.IRobo</rdfs:comment>
+        <rdfs:comment xml:lang="callstatement">move</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">move: move,proceed,displace,affect,make_a_motion,strike,go,be_active,actuate,run,impress,locomote,act,propel,incite,motivate,travel,prompt</rdfs:comment>
+        <rdfs:label xml:lang="en">move</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#move -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#move">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Method"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#dir"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#speed"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#time"/>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.IRobo</rdfs:comment>
+        <rdfs:comment xml:lang="callstatement">move</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">move: move,proceed,displace,affect,make_a_motion,strike,go,be_active,actuate,run,impress,locomote,act,propel,incite,motivate,travel,prompt</rdfs:comment>
+        <rdfs:label xml:lang="en">move</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#move -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#move">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Method"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#dir"/>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.IRobo</rdfs:comment>
+        <rdfs:comment xml:lang="callstatement">move</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">move: move,proceed,displace,affect,make_a_motion,strike,go,be_active,actuate,run,impress,locomote,act,propel,incite,motivate,travel,prompt</rdfs:comment>
+        <rdfs:label xml:lang="en">move</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#move -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#move">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Method"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#dir"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#length"/>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.IRobo</rdfs:comment>
+        <rdfs:comment xml:lang="callstatement">move</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">move: move,proceed,displace,affect,make_a_motion,strike,go,be_active,actuate,run,impress,locomote,act,propel,incite,motivate,travel,prompt</rdfs:comment>
+        <rdfs:label xml:lang="en">move</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#move -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#move">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Method"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#dir"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#length"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#speed"/>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.IRobo</rdfs:comment>
+        <rdfs:comment xml:lang="callstatement">move</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">move: move,proceed,displace,affect,make_a_motion,strike,go,be_active,actuate,run,impress,locomote,act,propel,incite,motivate,travel,prompt</rdfs:comment>
+        <rdfs:label xml:lang="en">move</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#object -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#object">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Object"/>
+        <rdfs:comment xml:lang="pos">0</rdfs:comment>
+        <rdfs:label xml:lang="en">object</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#object -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#object">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Object"/>
+        <rdfs:comment xml:lang="pos">0</rdfs:comment>
+        <rdfs:label xml:lang="en">object</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#object -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#object">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Object"/>
+        <rdfs:comment xml:lang="pos">0</rdfs:comment>
+        <rdfs:label xml:lang="en">object</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#object -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#object">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Object"/>
+        <rdfs:comment xml:lang="pos">0</rdfs:comment>
+        <rdfs:label xml:lang="en">object</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#object -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#object">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Object"/>
+        <rdfs:comment xml:lang="pos">0</rdfs:comment>
+        <rdfs:label xml:lang="en">object</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#object -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#object">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Object"/>
+        <rdfs:comment xml:lang="pos">0</rdfs:comment>
+        <rdfs:label xml:lang="en">object</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#object -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#object">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Object"/>
+        <rdfs:comment xml:lang="pos">0</rdfs:comment>
+        <rdfs:label xml:lang="en">object</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#playHalloweenTheme -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#playHalloweenTheme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Method"/>
+        <rdfs:comment xml:lang="synonym">Halloween: Hallowe&apos;en,Halloween,Allhallows_Eve</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">Theme: radical,subject,idea,melodic_theme,root_word,paper,musical_theme,composition,root,report,topic,theme,motif,base,stem</rdfs:comment>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.IRobo</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">play: play,roleplay,diddle,work,bring,run,playact,encounter,recreate,act_as,bet,wager,dally,act,meet,flirt,wreak,make_for,fiddle,spiel,take_on,trifle,represent,toy</rdfs:comment>
+        <rdfs:comment xml:lang="callstatement">playHalloweenTheme</rdfs:comment>
+        <rdfs:label xml:lang="en">playHalloweenTheme</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#quarter -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#quarter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Value"/>
+        <rdfs:comment xml:lang="callstatement">QUARTER</rdfs:comment>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.enums.Revolution</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">quarter:</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#red -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#red">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Value"/>
+        <rdfs:comment xml:lang="callstatement">RED</rdfs:comment>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.enums.Color</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">red: cherry,violent,cherry-red,ruby-red,ruddy,reddened,flushed,carmine,ruby,red,scarlet,crimson,blood-red,reddish,cerise,red-faced</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#release -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#release">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Method"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#object"/>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.IRobo</rdfs:comment>
+        <rdfs:comment xml:lang="callstatement">release</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">release: expel,issue,release,exhaust,turn,unfreeze,liberate,let_go_of,put_out,unloose,eject,unblock,bring_out,give_up,publish,loose,discharge,relinquish,unloosen,secrete,let_go,free,resign</rdfs:comment>
+        <rdfs:label xml:lang="en">release</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#rev -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#rev">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#Revolution"/>
+        <rdfs:comment xml:lang="pos">1</rdfs:comment>
+        <rdfs:label xml:lang="en">rev</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#rev -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#rev">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#Revolution"/>
+        <rdfs:comment xml:lang="pos">0</rdfs:comment>
+        <rdfs:label xml:lang="en">rev</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#rev -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#rev">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#Revolution"/>
+        <rdfs:comment xml:lang="pos">1</rdfs:comment>
+        <rdfs:label xml:lang="en">rev</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#rev -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#rev">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#Revolution"/>
+        <rdfs:comment xml:lang="pos">0</rdfs:comment>
+        <rdfs:label xml:lang="en">rev</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#right -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#right">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Value"/>
+        <rdfs:comment xml:lang="callstatement">RIGHT</rdfs:comment>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.enums.Direction</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">right: correct,right-hand,one,proper,ripe,right,veracious,good</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#sayGoodbye -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#sayGoodbye">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Method"/>
+        <rdfs:comment xml:lang="synonym">Goodbye: goodby,goodbye,sayonara,cheerio,bye-bye,adios,bye,good-by,adieu,auf_wiedersehen,good-bye,au_revoir,arrivederci,so_long,good_day</rdfs:comment>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.IRobo</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">say: sound_out,read,tell,allege,articulate,say,enjoin,suppose,aver,enunciate,state,pronounce,enounce,order</rdfs:comment>
+        <rdfs:comment xml:lang="callstatement">sayGoodbye</rdfs:comment>
+        <rdfs:label xml:lang="en">sayGoodbye</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#sing -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#sing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Method"/>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.IRobo</rdfs:comment>
+        <rdfs:comment xml:lang="callstatement">sing</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">sing: spill_the_beans,blab,blab_out,babble,peach,whistle,tattle,sing,talk,let_the_cat_out_of_the_bag,babble_out</rdfs:comment>
+        <rdfs:label xml:lang="en">sing</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#slow -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#slow">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Value"/>
+        <rdfs:comment xml:lang="callstatement">SLOW</rdfs:comment>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.enums.Speed</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">slow: obtuse,deadening,irksome,dim,dumb,tedious,sluggish,dense,ho-hum,boring,slow,wearisome,tiresome,dull</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#slowest -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#slowest">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Value"/>
+        <rdfs:comment xml:lang="callstatement">SLOWEST</rdfs:comment>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.enums.Speed</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">slowest:</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#speed -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#speed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#Speed"/>
+        <rdfs:comment xml:lang="pos">2</rdfs:comment>
+        <rdfs:label xml:lang="en">speed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#speed -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#speed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#Speed"/>
+        <rdfs:comment xml:lang="pos">2</rdfs:comment>
+        <rdfs:label xml:lang="en">speed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#speed -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#speed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#Speed"/>
+        <rdfs:comment xml:lang="pos">0</rdfs:comment>
+        <rdfs:label xml:lang="en">speed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#speed -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#speed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#Speed"/>
+        <rdfs:comment xml:lang="pos">1</rdfs:comment>
+        <rdfs:label xml:lang="en">speed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#speed -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#speed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#Speed"/>
+        <rdfs:comment xml:lang="pos">1</rdfs:comment>
+        <rdfs:label xml:lang="en">speed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#speed -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#speed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#Speed"/>
+        <rdfs:comment xml:lang="pos">1</rdfs:comment>
+        <rdfs:label xml:lang="en">speed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#speed -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#speed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#Speed"/>
+        <rdfs:comment xml:lang="pos">2</rdfs:comment>
+        <rdfs:label xml:lang="en">speed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#speed -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#speed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#Speed"/>
+        <rdfs:comment xml:lang="pos">1</rdfs:comment>
+        <rdfs:label xml:lang="en">speed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#speed -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#speed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#Speed"/>
+        <rdfs:comment xml:lang="pos">2</rdfs:comment>
+        <rdfs:label xml:lang="en">speed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#speed -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#speed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#Speed"/>
+        <rdfs:comment xml:lang="pos">0</rdfs:comment>
+        <rdfs:label xml:lang="en">speed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#speed -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#speed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#Speed"/>
+        <rdfs:comment xml:lang="pos">2</rdfs:comment>
+        <rdfs:label xml:lang="en">speed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#speed -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#speed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#Speed"/>
+        <rdfs:comment xml:lang="pos">1</rdfs:comment>
+        <rdfs:label xml:lang="en">speed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#throwAway -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#throwAway">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Method"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#object"/>
+        <rdfs:comment xml:lang="synonym">Away: away,outside</rdfs:comment>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.IRobo</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">throw: throw_away,drop,bemuse,shed,discombobulate,project,fox,switch,hold,cast,confuse,have,flip,make,give,fuddle,bewilder,contrive,confound,throw_off,shake_off,cast_off,throw,hurl,bedevil,thrust,befuddle</rdfs:comment>
+        <rdfs:comment xml:lang="callstatement">throwAway</rdfs:comment>
+        <rdfs:label xml:lang="en">throwAway</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#time -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#time">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#long"/>
+        <rdfs:comment xml:lang="pos">1</rdfs:comment>
+        <rdfs:label xml:lang="en">time</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#time -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#time">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Parameter"/>
+        <ofDataType rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#long"/>
+        <rdfs:comment xml:lang="pos">1</rdfs:comment>
+        <rdfs:label xml:lang="en">time</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#turnAround -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#turnAround">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Method"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#speed"/>
+        <rdfs:comment xml:lang="synonym">Around:</rdfs:comment>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.IRobo</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">turn: turn_over,grow,release,deform,work,plough,rick,turn,reverse,sour,sprain,change_state,wrench,change_by_reversal,plow,move_around,call_on,wrick,flex,bend,twist,become,ferment</rdfs:comment>
+        <rdfs:comment xml:lang="callstatement">turnAround</rdfs:comment>
+        <rdfs:label xml:lang="en">turnAround</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#turnAround -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#turnAround">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Method"/>
+        <rdfs:comment xml:lang="synonym">Around:</rdfs:comment>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.IRobo</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">turn: turn_over,grow,release,deform,work,plough,rick,turn,reverse,sour,sprain,change_state,wrench,change_by_reversal,plow,move_around,call_on,wrick,flex,bend,twist,become,ferment</rdfs:comment>
+        <rdfs:comment xml:lang="callstatement">turnAround</rdfs:comment>
+        <rdfs:label xml:lang="en">turnAround</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#turnUntil -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#turnUntil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Method"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#condition"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#dir"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#speed"/>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.IRobo</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">turn: turn_over,grow,release,deform,work,plough,rick,turn,reverse,sour,sprain,change_state,wrench,change_by_reversal,plow,move_around,call_on,wrick,flex,bend,twist,become,ferment</rdfs:comment>
+        <rdfs:comment xml:lang="callstatement">turnUntil</rdfs:comment>
+        <rdfs:label xml:lang="en">turnUntil</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#turnUntil -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#turnUntil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Method"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#condition"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#dir"/>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.IRobo</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">turn: turn_over,grow,release,deform,work,plough,rick,turn,reverse,sour,sprain,change_state,wrench,change_by_reversal,plow,move_around,call_on,wrick,flex,bend,twist,become,ferment</rdfs:comment>
+        <rdfs:comment xml:lang="callstatement">turnUntil</rdfs:comment>
+        <rdfs:label xml:lang="en">turnUntil</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#turnUntil -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#turnUntil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Method"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#condition"/>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.IRobo</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">turn: turn_over,grow,release,deform,work,plough,rick,turn,reverse,sour,sprain,change_state,wrench,change_by_reversal,plow,move_around,call_on,wrick,flex,bend,twist,become,ferment</rdfs:comment>
+        <rdfs:comment xml:lang="callstatement">turnUntil</rdfs:comment>
+        <rdfs:label xml:lang="en">turnUntil</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#turnUntil -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#turnUntil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Method"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#condition"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#speed"/>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.IRobo</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">turn: turn_over,grow,release,deform,work,plough,rick,turn,reverse,sour,sprain,change_state,wrench,change_by_reversal,plow,move_around,call_on,wrick,flex,bend,twist,become,ferment</rdfs:comment>
+        <rdfs:comment xml:lang="callstatement">turnUntil</rdfs:comment>
+        <rdfs:label xml:lang="en">turnUntil</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#turn -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#turn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Method"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#rev"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#speed"/>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.IRobo</rdfs:comment>
+        <rdfs:comment xml:lang="callstatement">turn</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">turn: turn_over,grow,release,deform,work,plough,rick,turn,reverse,sour,sprain,change_state,wrench,change_by_reversal,plow,move_around,call_on,wrick,flex,bend,twist,become,ferment</rdfs:comment>
+        <rdfs:label xml:lang="en">turn</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#turn -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#turn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Method"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#dir"/>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.IRobo</rdfs:comment>
+        <rdfs:comment xml:lang="callstatement">turn</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">turn: turn_over,grow,release,deform,work,plough,rick,turn,reverse,sour,sprain,change_state,wrench,change_by_reversal,plow,move_around,call_on,wrick,flex,bend,twist,become,ferment</rdfs:comment>
+        <rdfs:label xml:lang="en">turn</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#turn -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#turn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Method"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#degrees"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#dir"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#speed"/>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.IRobo</rdfs:comment>
+        <rdfs:comment xml:lang="callstatement">turn</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">turn: turn_over,grow,release,deform,work,plough,rick,turn,reverse,sour,sprain,change_state,wrench,change_by_reversal,plow,move_around,call_on,wrick,flex,bend,twist,become,ferment</rdfs:comment>
+        <rdfs:label xml:lang="en">turn</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#turn -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#turn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Method"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#degrees"/>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.IRobo</rdfs:comment>
+        <rdfs:comment xml:lang="callstatement">turn</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">turn: turn_over,grow,release,deform,work,plough,rick,turn,reverse,sour,sprain,change_state,wrench,change_by_reversal,plow,move_around,call_on,wrick,flex,bend,twist,become,ferment</rdfs:comment>
+        <rdfs:label xml:lang="en">turn</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#turn -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#turn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Method"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#rev"/>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.IRobo</rdfs:comment>
+        <rdfs:comment xml:lang="callstatement">turn</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">turn: turn_over,grow,release,deform,work,plough,rick,turn,reverse,sour,sprain,change_state,wrench,change_by_reversal,plow,move_around,call_on,wrick,flex,bend,twist,become,ferment</rdfs:comment>
+        <rdfs:label xml:lang="en">turn</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#turn -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#turn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Method"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#dir"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#rev"/>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.IRobo</rdfs:comment>
+        <rdfs:comment xml:lang="callstatement">turn</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">turn: turn_over,grow,release,deform,work,plough,rick,turn,reverse,sour,sprain,change_state,wrench,change_by_reversal,plow,move_around,call_on,wrick,flex,bend,twist,become,ferment</rdfs:comment>
+        <rdfs:label xml:lang="en">turn</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#turn -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#turn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Method"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#dir"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#rev"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#speed"/>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.IRobo</rdfs:comment>
+        <rdfs:comment xml:lang="callstatement">turn</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">turn: turn_over,grow,release,deform,work,plough,rick,turn,reverse,sour,sprain,change_state,wrench,change_by_reversal,plow,move_around,call_on,wrick,flex,bend,twist,become,ferment</rdfs:comment>
+        <rdfs:label xml:lang="en">turn</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#turn -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#turn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Method"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#dir"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#speed"/>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.IRobo</rdfs:comment>
+        <rdfs:comment xml:lang="callstatement">turn</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">turn: turn_over,grow,release,deform,work,plough,rick,turn,reverse,sour,sprain,change_state,wrench,change_by_reversal,plow,move_around,call_on,wrick,flex,bend,twist,become,ferment</rdfs:comment>
+        <rdfs:label xml:lang="en">turn</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#turn -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#turn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Method"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#degrees"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#speed"/>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.IRobo</rdfs:comment>
+        <rdfs:comment xml:lang="callstatement">turn</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">turn: turn_over,grow,release,deform,work,plough,rick,turn,reverse,sour,sprain,change_state,wrench,change_by_reversal,plow,move_around,call_on,wrick,flex,bend,twist,become,ferment</rdfs:comment>
+        <rdfs:label xml:lang="en">turn</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#turn -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#turn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Method"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#degrees"/>
+        <hasParameter rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#dir"/>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.IRobo</rdfs:comment>
+        <rdfs:comment xml:lang="callstatement">turn</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">turn: turn_over,grow,release,deform,work,plough,rick,turn,reverse,sour,sprain,change_state,wrench,change_by_reversal,plow,move_around,call_on,wrick,flex,bend,twist,become,ferment</rdfs:comment>
+        <rdfs:label xml:lang="en">turn</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#up -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#up">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Value"/>
+        <rdfs:comment xml:lang="callstatement">UP</rdfs:comment>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.enums.Direction</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">up: improving,astir,up,upward</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#white -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#white">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Value"/>
+        <rdfs:comment xml:lang="callstatement">WHITE</rdfs:comment>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.enums.Color</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">white: lily-white,bloodless,blank,ashen,white,white-hot,whitened,livid,clean,blanched,snowy</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#yellow -->
+
+    <owl:NamedIndividual rdf:about="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#yellow">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Value"/>
+        <rdfs:comment xml:lang="callstatement">YELLOW</rdfs:comment>
+        <rdfs:comment xml:lang="importstatement">edu.kit.ipd.ev3.enums.Color</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">yellow: chicken,yellowish,jaundiced,xanthous,lily-livered,yellowed,yellow,icteric,scandalmongering,sensationalistic,white-livered,yellow-bellied,chickenhearted</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/team3/robo-ontology-0#OWLNamedIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/team3/robo-ontology-0#OWLNamedIndividual">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Object"/>
+        <closeDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">32.0</closeDistance>
+        <farDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.0</farDistance>
+        <midDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">41.0</midDistance>
+        <rdfs:comment xml:lang="synonym">Cleaner: dry_cleaner,cleaner,cleansing_agent,cleanser</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">Screen: cover,blind,filmdom,silver_screen,concealment,screen,projection_screen,CRT_screen,sieve,screenland,covert</rdfs:comment>
+        <rdfs:label xml:lang="en">ScreenCleaner</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/team3/robo-ontology-0#OWLNamedIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/team3/robo-ontology-0#OWLNamedIndividual">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Object"/>
+        <closeDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">88.0</closeDistance>
+        <farDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">70.0</farDistance>
+        <midDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">42.0</midDistance>
+        <rdfs:comment xml:lang="synonym">Daemmstoff:</rdfs:comment>
+        <rdfs:label xml:lang="en">Daemmstoff</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/team3/robo-ontology-0#OWLNamedIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/team3/robo-ontology-0#OWLNamedIndividual">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Object"/>
+        <closeDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.0</closeDistance>
+        <farDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">66.0</farDistance>
+        <midDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">35.0</midDistance>
+        <rdfs:comment xml:lang="synonym">Box: loge,corner,box_seat,boxwood,box,boxful</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">Tea: tea,teatime,afternoon_tea,tea_leaf,Camellia_sinensis</rdfs:comment>
+        <rdfs:label xml:lang="en">TeaBox</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/team3/robo-ontology-0#OWLNamedIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/team3/robo-ontology-0#OWLNamedIndividual">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Object"/>
+        <closeDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.5</closeDistance>
+        <farDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">70.0</farDistance>
+        <midDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">41.0</midDistance>
+        <rdfs:comment xml:lang="synonym">Beer: beer</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">Black: black-market,ignominious,smuggled,fateful,contraband,bootleg,calamitous,pitch-dark,black,disgraceful,opprobrious,dim,smutty,fatal,bleak,inglorious,disastrous,mordant,blackened,sinister,dark,shameful,pitch-black,grim</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">Can: ass,prat,behind,stool,commode,potty,lavatory,backside,throne,tooshie,keister,tin_can,can,rear,fundament,rump,rear_end,pot,fanny,canful,tin,hind_end,derriere,hindquarters,bathroom,tush,lav,can_buoy,crapper,tail,bottom,posterior,stern,arse,seat,toilet,nates,privy,buns,buttocks,john,bum,tail_end,butt</rdfs:comment>
+        <rdfs:label xml:lang="en">BlackBeerCan</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/team3/robo-ontology-0#OWLNamedIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/team3/robo-ontology-0#OWLNamedIndividual">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Object"/>
+        <closeDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">6.0</closeDistance>
+        <farDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">72.0</farDistance>
+        <midDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">40.0</midDistance>
+        <rdfs:comment xml:lang="synonym">Bottle: feeding_bottle,bottle,bottleful,nursing_bottle</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">Cup: loving_cup,cupful,cup</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">Suction: sucking,suction,suck</rdfs:comment>
+        <rdfs:label xml:lang="en">SuctionCupBottle</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/team3/robo-ontology-0#OWLNamedIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/team3/robo-ontology-0#OWLNamedIndividual">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Object"/>
+        <closeDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">12.7</closeDistance>
+        <farDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">55.0</farDistance>
+        <midDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">39.0</midDistance>
+        <rdfs:comment xml:lang="synonym">Nuts:</rdfs:comment>
+        <rdfs:label xml:lang="en">Nuts</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/team3/robo-ontology-0#OWLNamedIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/team3/robo-ontology-0#OWLNamedIndividual">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Object"/>
+        <closeDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">10.0</closeDistance>
+        <farDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">71.0</farDistance>
+        <midDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">40.0</midDistance>
+        <rdfs:comment xml:lang="synonym">Beer: beer</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">Can: ass,prat,behind,stool,commode,potty,lavatory,backside,throne,tooshie,keister,tin_can,can,rear,fundament,rump,rear_end,pot,fanny,canful,tin,hind_end,derriere,hindquarters,bathroom,tush,lav,can_buoy,crapper,tail,bottom,posterior,stern,arse,seat,toilet,nates,privy,buns,buttocks,john,bum,tail_end,butt</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">Red: cherry,violent,cherry-red,ruby-red,ruddy,reddened,flushed,carmine,ruby,red,scarlet,crimson,blood-red,reddish,cerise,red-faced</rdfs:comment>
+        <rdfs:label xml:lang="en">RedBeerCan</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/team3/robo-ontology-0#OWLNamedIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/team3/robo-ontology-0#OWLNamedIndividual">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Object"/>
+        <closeDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">255.0</closeDistance>
+        <farDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">77.0</farDistance>
+        <midDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">40.0</midDistance>
+        <rdfs:comment xml:lang="synonym">Ball: Ball,egg,Lucille_Ball,glob,baseball_game,chunk,clump,testis,testicle,orchis,nut,clod,formal,ball,musket_ball,globe,ballock,baseball,bollock,orb,lump</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">Gum: mucilage,gingiva,chewing_gum,glue,gumwood,gum_tree,gum</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">spiky: peaky,spiky</rdfs:comment>
+        <rdfs:label xml:lang="en">spikyGumBall</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/team3/robo-ontology-0#OWLNamedIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/team3/robo-ontology-0#OWLNamedIndividual">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Object"/>
+        <closeDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.0</closeDistance>
+        <farDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">72.0</farDistance>
+        <midDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">14.0</midDistance>
+        <rdfs:comment xml:lang="synonym">Cup: loving_cup,cupful,cup</rdfs:comment>
+        <rdfs:comment xml:lang="synonym">Xmas: Christmas,Dec_25,Christmas_Day,Xmas</rdfs:comment>
+        <rdfs:label xml:lang="en">XmasCup</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/team3/robo-ontology-0#OWLNamedIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/team3/robo-ontology-0#OWLNamedIndividual">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#Object"/>
+        <closeDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">32.0</closeDistance>
+        <farDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">70.0</farDistance>
+        <midDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">40.0</midDistance>
+        <rdfs:comment xml:lang="synonym">Tissue: tissue_paper,tissue</rdfs:comment>
+        <rdfs:label xml:lang="en">Tissue</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/team3/robo-ontology-0#Object -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/team3/robo-ontology-0#Object">
+        <rdf:type rdf:resource="http://www.semanticweb.org/team3/robo-ontology-0#DataType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/team3/robo-ontology-0#Robo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/team3/robo-ontology-0#Robo">
+        <hasMethod rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#ConditionCloseToObject"/>
+        <hasMethod rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#ConditionLineDetected"/>
+        <hasMethod rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#ConditionNearObject"/>
+        <hasMethod rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#ConditionSeesColor"/>
+        <hasMethod rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#ConditionSeesObject"/>
+        <hasMethod rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#ConditionSeesRemote"/>
+        <hasMethod rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#belch"/>
+        <hasMethod rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#blink"/>
+        <hasMethod rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#clap"/>
+        <hasMethod rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#followLineUntil"/>
+        <hasMethod rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#followLineUntil"/>
+        <hasMethod rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#grab"/>
+        <hasMethod rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#liftHead"/>
+        <hasMethod rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#look"/>
+        <hasMethod rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#lowerHead"/>
+        <hasMethod rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#makeTowardsObject"/>
+        <hasMethod rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#moveHead"/>
+        <hasMethod rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#moveUntil"/>
+        <hasMethod rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#moveUntil"/>
+        <hasMethod rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#move"/>
+        <hasMethod rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#move"/>
+        <hasMethod rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#move"/>
+        <hasMethod rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#move"/>
+        <hasMethod rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#move"/>
+        <hasMethod rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#playHalloweenTheme"/>
+        <hasMethod rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#release"/>
+        <hasMethod rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#sayGoodbye"/>
+        <hasMethod rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#sing"/>
+        <hasMethod rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#throwAway"/>
+        <hasMethod rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#turnAround"/>
+        <hasMethod rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#turnAround"/>
+        <hasMethod rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#turnUntil"/>
+        <hasMethod rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#turnUntil"/>
+        <hasMethod rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#turnUntil"/>
+        <hasMethod rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#turnUntil"/>
+        <hasMethod rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#turn"/>
+        <hasMethod rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#turn"/>
+        <hasMethod rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#turn"/>
+        <hasMethod rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#turn"/>
+        <hasMethod rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#turn"/>
+        <hasMethod rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#turn"/>
+        <hasMethod rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#turn"/>
+        <hasMethod rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#turn"/>
+        <hasMethod rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#turn"/>
+        <hasMethod rdf:resource="Optional[http://www.semanticweb.org/team3/robo-ontology-0]/#turn"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/team3/robo-ontology-0#Robo">
+        <rdfs:label xml:lang="en">Robo</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
