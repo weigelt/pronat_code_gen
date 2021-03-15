@@ -1,17 +1,17 @@
-package edu.kit.ipd.parse.code_gen;
+package edu.kit.ipd.pronat.code_gen;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Modifier;
 import java.util.*;
 import java.util.stream.Collectors;
 
-import edu.kit.ipd.parse.luna.data.PostPipelineData;
+import edu.kit.ipd.pronat.postpipelinedatamodel.PostPipelineData;
+import edu.kit.ipd.pronat.postpipelinedatamodel.ast.visitor.IVisitor;
 import org.kohsuke.MetaInfServices;
 import org.reflections.Reflections;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import edu.kit.ipd.parse.luna.data.ast.visitor.IVisitor;
 import edu.kit.ipd.parse.luna.data.AbstractPipelineData;
 import edu.kit.ipd.parse.luna.data.PipelineDataCastException;
 import edu.kit.ipd.parse.luna.pipeline.IPipelineStage;
@@ -43,12 +43,11 @@ public class CodeGenStage implements IPipelineStage {
 		logger.debug("Starting Pipeline {}", ID);
 		// casting data
 		try {
-			appd = data.asPostPipelineData();
+			appd = (PostPipelineData) data.asPostPipelineData();
 
-			Reflections reflections = new Reflections("edu.kit.ipd.parse.code_gen");
-			Set<Class<? extends edu.kit.ipd.parse.luna.data.ast.visitor.IVisitor>> classes = reflections
-					.getSubTypesOf(edu.kit.ipd.parse.luna.data.ast.visitor.IVisitor.class).stream()
-					.filter(e -> e.getPackageName().startsWith("edu.kit.ipd.parse.code_gen")).collect(Collectors.toSet());
+			Reflections reflections = new Reflections("edu.kit.ipd.pronat.code_gen");
+			Set<Class<? extends IVisitor>> classes = reflections.getSubTypesOf(IVisitor.class).stream()
+					.filter(e -> e.getPackageName().startsWith("edu.kit.ipd.pronat.code_gen")).collect(Collectors.toSet());
 
 			Set<IVisitor> visitorLoader = new HashSet<>();
 

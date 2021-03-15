@@ -1,8 +1,8 @@
-package edu.kit.ipd.parse.code_gen.visitor;
+package edu.kit.ipd.pronat.code_gen.visitor;
 
-import edu.kit.ipd.parse.luna.data.ast.tree.ASTBlock;
-import edu.kit.ipd.parse.luna.data.ast.tree.ASTParallel;
-import edu.kit.ipd.parse.luna.data.ast.visitor.CStyleVisitor;
+import edu.kit.ipd.pronat.postpipelinedatamodel.ast.tree.ASTBlock;
+import edu.kit.ipd.pronat.postpipelinedatamodel.ast.tree.ASTParallel;
+import edu.kit.ipd.pronat.postpipelinedatamodel.ast.visitor.CStyleVisitor;
 
 /**
  * @author Sebastian Weigelt

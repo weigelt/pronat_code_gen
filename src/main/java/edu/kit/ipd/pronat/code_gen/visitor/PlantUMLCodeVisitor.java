@@ -1,10 +1,9 @@
-package edu.kit.ipd.parse.code_gen.visitor;
+package edu.kit.ipd.pronat.code_gen.visitor;
 
-import edu.kit.ipd.parse.luna.data.ast.tree.*;
-import edu.kit.ipd.parse.luna.data.ast.visitor.IVisitor;
-
-import edu.kit.ipd.parse.luna.data.code.Method;
-import edu.kit.ipd.parse.luna.data.code.Parameter;
+import edu.kit.ipd.pronat.postpipelinedatamodel.ast.tree.*;
+import edu.kit.ipd.pronat.postpipelinedatamodel.ast.visitor.IVisitor;
+import edu.kit.ipd.pronat.postpipelinedatamodel.code.Method;
+import edu.kit.ipd.pronat.postpipelinedatamodel.code.Parameter;
 
 /**
  * @author Sebastian Weigelt

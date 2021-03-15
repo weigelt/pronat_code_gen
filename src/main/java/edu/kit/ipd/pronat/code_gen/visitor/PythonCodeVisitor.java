@@ -1,20 +1,9 @@
-package edu.kit.ipd.parse.code_gen.visitor;
+package edu.kit.ipd.pronat.code_gen.visitor;
 
-import edu.kit.ipd.parse.luna.data.ast.tree.ASTBlock;
-import edu.kit.ipd.parse.luna.data.ast.tree.ASTBranch;
-import edu.kit.ipd.parse.luna.data.ast.tree.ASTComperator;
-import edu.kit.ipd.parse.luna.data.ast.tree.ASTConditionCall;
-import edu.kit.ipd.parse.luna.data.ast.tree.ASTDeclaration;
-import edu.kit.ipd.parse.luna.data.ast.tree.ASTFor;
-import edu.kit.ipd.parse.luna.data.ast.tree.ASTMethodCall;
-import edu.kit.ipd.parse.luna.data.ast.tree.ASTNode;
-import edu.kit.ipd.parse.luna.data.ast.tree.ASTParallel;
-import edu.kit.ipd.parse.luna.data.ast.tree.ASTRoot;
-import edu.kit.ipd.parse.luna.data.ast.tree.ASTText;
-import edu.kit.ipd.parse.luna.data.ast.tree.ASTWhile;
-import edu.kit.ipd.parse.luna.data.ast.visitor.AbstractVisitor;
-import edu.kit.ipd.parse.luna.data.code.Method;
-import edu.kit.ipd.parse.luna.data.code.Parameter;
+import edu.kit.ipd.pronat.postpipelinedatamodel.ast.tree.*;
+import edu.kit.ipd.pronat.postpipelinedatamodel.ast.visitor.AbstractVisitor;
+import edu.kit.ipd.pronat.postpipelinedatamodel.code.Method;
+import edu.kit.ipd.pronat.postpipelinedatamodel.code.Parameter;
 
 /**
  * @author Sebastian Weigelt

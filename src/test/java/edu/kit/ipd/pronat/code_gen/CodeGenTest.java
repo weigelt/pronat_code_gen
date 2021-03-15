@@ -1,7 +1,7 @@
-package edu.kit.ipd.parse.code_gen;
+package edu.kit.ipd.pronat.code_gen;
 
-import edu.kit.ipd.parse.luna.data.PostPipelineData;
 import edu.kit.ipd.parse.luna.pipeline.PipelineStageException;
+import edu.kit.ipd.pronat.postpipelinedatamodel.PostPipelineData;
 import org.junit.Ignore;
 import org.junit.Test;
 
